@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hapticFeedbackEnabled="false"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/downloadtxt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="-158dp"
+        android:layout_marginEnd="11dp"
+        android:hint="Name to Save Image with" />
+
+    <Button
+        android:id="@+id/pastebtn"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="176dp"
+        android:text="Paste Link" />
+
+    <Button
+        android:id="@+id/downloadbtn"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="175dp"
+        android:layout_toEndOf="@+id/pastebtn"
+        android:text="Download" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="403dp"
+        android:layout_height="416dp"
+        android:layout_below="@+id/pastebtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="21dp"
+        android:contentDescription="Downloaded Image"
+        android:visibility="visible"
+        app:srcCompat="@color/purple_200"
+        tools:srcCompat="@color/teal_200" />
+
+    <EditText
+        android:id="@+id/downloadtxt"
+        android:layout_width="391dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Image Url Here"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/previewbtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pastebtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="126dp"
+        android:text="PREVIEW" />
+</RelativeLayout>
